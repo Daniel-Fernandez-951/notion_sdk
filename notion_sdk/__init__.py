@@ -5,13 +5,14 @@ Make SESSION here (requests) from https://semaphoreci.com/community/tutorials/bu
 """
 import os
 import requests
+from .__version__ import __notion_api_version__
 from dotenv import load_dotenv
 
 load_dotenv()
 
 NOTION_INTEGRATION_SECRET = os.getenv('NOTION_SECRET', None)
-CONTENT_TYPE="application/json"
-NOTION_VERSION = "2022-02-22"
+CONTENT_TYPE = "application/json"
+NOTION_VERSION = __notion_api_version__
 
 
 # NOTION_INTEGRATION_SECRET = os.environ.get('NOTION_SECRET', None)
