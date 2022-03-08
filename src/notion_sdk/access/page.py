@@ -1,4 +1,3 @@
-import requests
 from typing import Dict, Optional
 
 from .. import session
@@ -17,13 +16,15 @@ class PropertyIdMissing(Exception):
     Property ID is required.
     Notion API docs: https://developers.notion.com/reference/retrieve-a-page-property
     """
+    pass
 
 
 class EndpointRequiresData(Exception):
-    info = f"""\n
+    info = """\n
     This endpoint requires data not supplied.
-    Notion API docs: https://developers.notion.com/reference/\
+    Notion API docs: https://developers.notion.com/reference/
     """
+    pass
 
     def info_out(self):
         return self.info

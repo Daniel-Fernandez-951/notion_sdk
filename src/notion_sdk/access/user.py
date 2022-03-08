@@ -1,5 +1,4 @@
-import requests
-from typing import Dict, Optional
+from typing import Optional
 
 from .. import session
 

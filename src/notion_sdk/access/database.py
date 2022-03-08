@@ -1,4 +1,3 @@
-import requests
 from typing import List, Dict, Optional
 
 from .. import session
@@ -22,7 +21,7 @@ class Database:
 
         if db_id is None:
             raise DatabaseIdMissing(f"{DatabaseIdMissing.info}")
-        
+
         self.id = db_id
         self.path_root = "https://api.notion.com/v1/databases/"
         self.path_id = f"{self.path_root + self.id}/"

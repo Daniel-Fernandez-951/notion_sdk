@@ -9,11 +9,11 @@ r"""
                                                                             \|_________|
 """
 
-__title__ = "notion-sdk"
+__title__ = "notion_sdk"
 __description__ = "Python Notion SDK to interact with Notion API; get, update, and delete objects in Notion.io."
 __url__ = "https://github.com/Daniel-Fernandez-951/notion_sdk"
 __issues__ = f"{__url__}/issues"
-__version__ = "0.0.1"
+__sdk_version__ = "0.0.1"
 __notion_api_version__ = "2022-02-22"
 __author__ = "Daniel Fernandez"
 __author_email__ = "dan@danielf.com"

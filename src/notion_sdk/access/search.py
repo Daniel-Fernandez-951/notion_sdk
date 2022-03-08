@@ -1,7 +1,7 @@
-import requests
 from typing import Dict, Optional
 
 from .. import session
+
 
 class SearchRequiresData(Exception):
     info = """\n
